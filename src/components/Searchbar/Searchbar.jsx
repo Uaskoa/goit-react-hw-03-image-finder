@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import './Searchbar.scss';
+import PropTypes from 'prop-types';
 
 class Searchbar extends Component {
   state = {
@@ -43,5 +44,6 @@ class Searchbar extends Component {
 
 export default Searchbar;
 
-// export const BASE_URL = 'https://pixabay.com/api/';
-// export const API_KEY = '20667808-d6e3a4866a107921c5b89b931';
+Searchbar.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};

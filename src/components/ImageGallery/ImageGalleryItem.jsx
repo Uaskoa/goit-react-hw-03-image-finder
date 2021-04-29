@@ -1,4 +1,5 @@
 import './ImageGallery.scss';
+import PropTypes from 'prop-types';
 
 const ImageGalleryItem = ({
   id,
@@ -19,3 +20,18 @@ const ImageGalleryItem = ({
 );
 
 export default ImageGalleryItem;
+
+ImageGalleryItem.propTypes = {
+  id: PropTypes.number,
+  webformatURL: PropTypes.string,
+  alt: PropTypes.string,
+  largeImageURL: PropTypes.string,
+  onOpenModal: PropTypes.func,
+};
+
+
+
+// ImageGallery.propTypes = {
+//   images: PropTypes.array.isRequired,
+//   onOpenModal: PropTypes.func.isRequired,
+// };
