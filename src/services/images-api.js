@@ -13,7 +13,8 @@ const fetchImages = ({ searchQuery = '', currentPage = 1 }) => {
       `${BASE_URL}?q=${searchQuery}&page=${currentPage}
     &key=${API_KEY}&image_type=${IMG_TYPE}&orientation=${ORIENTATION}&per_page=12`,
     )
+   
     .then(response => response.data.hits);
 };
 
-export default { fetchImages };
+export default  fetchImages ;

@@ -25,3 +25,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.Loader {
+  margin: 0 auto;
+  width: 50px;
+}
+
+.Error {
+  color: red;
+  margin: 20px auto 0 auto;
+  width: 650px;
+}
