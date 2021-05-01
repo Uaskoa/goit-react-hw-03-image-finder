@@ -54,13 +54,11 @@ class App extends Component {
       .finally(() => this.setState({ isLoading: false }));
   };
 
-  toggleModal = e => {
+  toggleModal = () => {
     this.setState(({ showModal }) => ({ showModal: !showModal }));
     if (this.state.showModal) {
       this.setState({ largeImgUrl: '' });
     }
-
-    // console.log(e.target);
   };
 
   handleModalImg = e => {

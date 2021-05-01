@@ -31,7 +31,3 @@ ImageGalleryItem.propTypes = {
 
 
 
-// ImageGallery.propTypes = {
-//   images: PropTypes.array.isRequired,
-//   onOpenModal: PropTypes.func.isRequired,
-// };

@@ -24,9 +24,6 @@ class Modal extends Component {
     if (e.currentTarget === e.target) {
       this.props.onClose();
     }
-
-    // console.log(e.currentTarget); //на чём словили
-    // console.log(e.target); //на что клацнули
   };
 
   render() {
@@ -42,5 +39,5 @@ export default Modal;
 
 
 Modal.propTypes = {
-  onClick: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
